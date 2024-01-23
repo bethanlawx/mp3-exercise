@@ -1,0 +1,35 @@
+{
+  "name": "mp3-exercise",
+  "version": "1.0.0",
+  "description": "TODO: change gts to prettier",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "format": "npx prettier --write ."
+  },
+  "author": "Beth Law",
+  "license": "ISC",
+  "keywords": [],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.5",
+    "concurrently": "^8.2.2",
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4",
+    "pretty-quick": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
